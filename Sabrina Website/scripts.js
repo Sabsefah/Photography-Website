@@ -1,3 +1,8 @@
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+function showSection(sectionId) {
+    
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'none';
+    });
+    
+    document.getElementById(sectionId).style.display = 'block';
 }
